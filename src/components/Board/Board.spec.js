@@ -3,10 +3,6 @@ import Board from "./Board.js";
 import Square from "../Square/Square.js";
 
 describe('Rendering of board component',()=>{
-    it('should render the board component',()=>{
-        const boardComponent = render(<Board />);
-        expect(boardComponent).toBeDefined();
-    })
 
     it('should render 9 square inside board',()=>{
         render(<Board />);
@@ -42,3 +38,4 @@ describe('Rendering of board component',()=>{
         expect(nextPlayerMustBeO).toHaveTextContent('Next player: O')
     })
 })
+
